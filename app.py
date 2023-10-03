@@ -1,5 +1,5 @@
 from lib.database_connection import DatabaseConnection
-from lib.artist_repository import ArtistRepository
+from lib.album_repository import AlbumRepository
 
 
 # Connect to the database
@@ -10,9 +10,9 @@ connection.connect()
 connection.seed("seeds/music_library.sql")
 
 # Retrieve all artists
-artist_repository = ArtistRepository(connection)
-artists = artist_repository.all()
+album_repository = AlbumRepository(connection)
+album = album_repository.all()
 
 # List them out
-for artist in artists:
-    print(artist)
+for album in album:
+    print(album)
