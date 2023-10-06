@@ -15,3 +15,4 @@ def test_albums_are_equal():
 def test_album_format_nicely():
     album = Album(1, "Test title", "Test release_year", "Test artist_id")
     assert str(album) == "Album(1, Test title, Test release_year, Test artist_id)"
+    
